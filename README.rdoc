@@ -1,1 +1,22 @@
+2/16 HW 4
+
 heroku URL -->  http://ancient-mountain-1623.herokuapp.com/
+
+schema:
+
+User 
+	-accnt name (string)
+	-password (string)
+	-email (string)
+	-location (string)
+	-age (integer)
+Video
+	-File (string)
+	-User belongs to User
+	-#likes (integer) will be implemented later
+	-Name (string)
+Comments
+	-User belongs to User
+	-Comment (text)
+	-#likes belongs to   will be implemented later
+	-Video belongs to Video
