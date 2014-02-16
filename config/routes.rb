@@ -1,16 +1,7 @@
 App::Application.routes.draw do
-  get "comments/index"
-  get "comments/new"
-  get "comments/show"
-  get "comments/edit"
-  get "videos/index"
-  get "videos/new"
-  get "videos/show"
-  get "videos/edit"
-  get "users/index"
-  get "users/new"
-  get "users/show"
-  get "users/edit"
+  resources :users
+  resources :videos
+  resources :comments
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

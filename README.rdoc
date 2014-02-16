@@ -13,10 +13,14 @@ User
 Video
 	-File (string)
 	-User belongs to User
-	-#likes (integer) will be implemented later
+	-#likes belongs to ... will be implemented later
 	-Name (string)
 Comments
 	-User belongs to User
 	-Comment (text)
-	-#likes belongs to   will be implemented later
+	-#Likes belongs to ... will be implemented later
 	-Video belongs to Video
+
+
+I worked on this at office hours with jenny so I avoided a lot of problems working with her. I setup the schema for the users, videos, and comments.
+Created links on homepage that link to create a new user, video and comment, and to show all users, videos, and comments.
