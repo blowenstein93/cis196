@@ -22,6 +22,4 @@ Comments
 	-Video belongs to Video
 
 
-I worked on this at office hours with jenny so I avoided a lot of problems working with her. I setup the schema for the
-users, videos, and comments.
-Created links on homepage that link to create a new user, video and comment, and to show all users, videos, and comments.
+I setup the schema and made links so you can make a user, list all users, post videos, list videos, make comments, and list all comments. I setup the schema with Jenny at office hours so everything went well then. However, I ran into a couple roadblocks setting up the links etc. I struggled for a while but eventually found out that I used comments and comment in the wrong places.
