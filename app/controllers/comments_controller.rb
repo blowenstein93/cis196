@@ -1,21 +1,21 @@
 class CommentsController < ApplicationController
   def index
-    @comments = Comment.all
+    @comment = Comment.all
   end
 
   def new
-  	@comment = Comment.new
+    @comments = Comment.new
   end
 
   def create
-  	@comment.Comment.new(comment_params)
+  	@comment = Comment.new(comment_params)
   	if @comment.save
-  		redirect_to comment_path
+  		redirect_to comments_path
   	else
   		render 'new'
   	end
   end
-  	
+  
   def show
   end
 
@@ -24,6 +24,6 @@ class CommentsController < ApplicationController
 
   private
   def comment_params
-  	params.require(:user, :comment)
+  	params.require(:comment).permit(:user_id, :comment, :video_id)
   end
 end

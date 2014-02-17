@@ -4,7 +4,7 @@
 <%=form_for(@comments) do|f| %>
 	<div class="field">
 		<p>user</p>
-		<%= f.text_field :user%>
+		<%=f.collection_select :user_id, User.all, :id, :account_name %>
 	</div>
 	<div class="field">
 		<p>comment</p>
@@ -13,7 +13,7 @@
 	
 	<div class="field">
 		<p>video</p>
-		<%=f.text_field :video%>
+		<%=f.collection_select :video_id, Video.all, :id, :name %>
 	</div>
 	<div class="actions">
 		<%=f.submit%>

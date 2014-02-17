@@ -6,10 +6,10 @@
 		<td>user</td>
 		<td>name</td>
 	</tr>
-	<% @video.each do |video|%>
+	<% @videos.each do |video|%>
 	<tr>
 		<td><%= video.file %></td>
-		<td><%= video.user %></td>
+		<td><%= video.user.account_name unless video.user.nil? %></td>
 		<td><%= video.name %></td>
 	</tr>
 	<% end %>

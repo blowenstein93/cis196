@@ -9,9 +9,9 @@
 	</tr>
 	<% @comment.each do |comment|%>
 	<tr>
-		<td><%= comment.user %></td>
+		<td><%= comment.user.account_name unless comment.user.nil? %></td>
 		<td><%= comment.comment %></td>
-		<td><%= comment.video %></td>
+		<td><%= comment.video.name unless comment.video.nil?  %></td>
 	</tr>
 	<% end %>
 </table>

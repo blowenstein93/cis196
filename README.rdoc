@@ -5,18 +5,18 @@ heroku URL -->  http://ancient-mountain-1623.herokuapp.com/
 schema:
 
 User 
-	-accnt name (string)
+	-account_name (string)
 	-password (string)
 	-email (string)
 	-location (string)
 	-age (integer)
 Video
 	-File (string)
-	-User belongs to User
+	-User_id belongs to User
 	-#likes belongs to ... will be implemented later
 	-Name (string)
 Comments
-	-User belongs to User
+	-User_id belongs to User
 	-Comment (text)
 	-#Likes belongs to ... will be implemented later
 	-Video belongs to Video

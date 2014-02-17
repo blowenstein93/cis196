@@ -8,9 +8,9 @@ class VideosController < ApplicationController
   end
 
   def create
-  	@video.Video.new(video_params)
+  	@video = Video.new(video_params)
   	if @video.save
-  		redirect_to video_path
+  		redirect_to videos_path
   	else 
   		render 'new'
   	end
@@ -23,8 +23,8 @@ class VideosController < ApplicationController
   end
 
   private 
-  def user_params
-  	params.require(:file, :user)
+  def video_params
+  	params.require(:video).permit(:file, :user_id, :name)
   end
 
 end

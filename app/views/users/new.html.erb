@@ -2,16 +2,15 @@
 <p>Find me in app/views/users/new.html.erb</p>
 
 
-<%=form_for(@user) do|f| %>
+<%=form_for @user do|f| %>
 	<div class="field">
 		<p>account name</p>
-		<%= f.text_field :account_name%>
+		<%=f.text_field :account_name%>
 	</div>
 	<div class="field">
 		<p>email</p>
 		<%=f.text_field :email%>
 	</div>
-
 	<div class="field">
 		<p>password</p>
 		<%=f.text_field :password%>

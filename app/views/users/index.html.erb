@@ -2,16 +2,16 @@
 <p>Find me in app/views/users/index.html.erb</p>
 <table>
 	<tr>
+		<td>account name</td>
 		<td>email</td>
-		<td>account name </td>
 		<td>password</td>
 		<td>location</td>
 		<td>age</td>
 	</tr>
 	<% @users.each do |user|%>
 	<tr>
-		<td><%= user.email %></td>
 		<td><%= user.account_name %></td>
+		<td><%= user.email %></td>
 		<td><%= user.password %></td>
 		<td><%= user.location %></td>
 		<td><%= user.age %></td>
