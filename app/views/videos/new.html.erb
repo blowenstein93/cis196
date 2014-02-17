@@ -1,2 +1,23 @@
 <h1>Videos#new</h1>
 <p>Find me in app/views/videos/new.html.erb</p>
+
+
+<%=form_for(@videos) do|f| %>
+	<div class="field">
+		<p>file</p>
+		<%= f.text_field :file%>
+	</div>
+	<div class="field">
+		<p>user</p>
+		<%=f.text_field :user%>
+	</div>
+	
+	<div class="field">
+		<p>name</p>
+		<%=f.text_field :name%>
+	</div>
+
+	<div class="actions">
+		<%=f.submit%>
+	</div>
+<%end%>

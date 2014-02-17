@@ -1,2 +1,16 @@
 <h1>Videos#index</h1>
 <p>Find me in app/views/videos/index.html.erb</p>
+<table>
+	<tr>
+		<td>file</td>
+		<td>user</td>
+		<td>name</td>
+	</tr>
+	<% @video.each do |video|%>
+	<tr>
+		<td><%= video.file %></td>
+		<td><%= video.user %></td>
+		<td><%= video.name %></td>
+	</tr>
+	<% end %>
+</table>
