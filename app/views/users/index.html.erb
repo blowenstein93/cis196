@@ -1,5 +1,3 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
 <table>
 	<tr>
 		<td>account name</td>
@@ -10,11 +8,13 @@
 	</tr>
 	<% @users.each do |user|%>
 	<tr>
-		<td><%= user.account_name %></td>
+		<td><%= link_to user.account_name, user_path(user.id) %></td>
 		<td><%= user.email %></td>
 		<td><%= user.password %></td>
 		<td><%= user.location %></td>
 		<td><%= user.age %></td>
+		<td><%= button_to "delete user", user, method: :delete %></td>
+		<td><%= link_to "edit user", edit_user_path(user.id) %></td>
 	</tr>
 	<% end %>
 </table>

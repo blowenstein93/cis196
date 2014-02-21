@@ -1,2 +1,18 @@
-<h1>Videos#edit</h1>
-<p>Find me in app/views/videos/edit.html.erb</p>
+<%= form_for(@video) do |f| %>
+	<div class="field">
+		<p>File Name: </p>
+		<%= f.text_field :file%>
+	</div>
+	<div class="field">
+		<p>user</p>
+		<%=f.collection_select :user_id, User.all, :id, :account_name %>
+	</div>
+	<div class="field">
+		<p>Video Name: </p>
+		<%= f.text_field :name%>
+	</div>
+
+	<div class="actions">
+		<%= f.submit%>
+	</div>
+<% end %> 

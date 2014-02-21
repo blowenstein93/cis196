@@ -1,5 +1,3 @@
-<h1>Videos#index</h1>
-<p>Find me in app/views/videos/index.html.erb</p>
 <table>
 	<tr>
 		<td>file</td>
@@ -8,9 +6,12 @@
 	</tr>
 	<% @videos.each do |video|%>
 	<tr>
-		<td><%= video.file %></td>
+		<td><%= link_to video.file, video_path(video.id) %></td>
 		<td><%= video.user.account_name unless video.user.nil? %></td>
 		<td><%= video.name %></td>
+		<td><%= button_to "delete video", video, method: :delete %></td>
+		<td><%= link_to "edit video", edit_video_path(video.id) %></td>
+
 	</tr>
 	<% end %>
 </table>
