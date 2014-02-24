@@ -23,3 +23,8 @@ Comments
 
 
 I setup the schema and made links so you can make a user, list all users, post videos, list videos, make comments, and list all comments. I setup the schema with Jenny at office hours so everything went well then. However, I ran into a couple roadblocks setting up the links etc. I struggled for a while but eventually found out that I used comments and comment in the wrong places.
+
+2/20 HW 5
+heroku url --> http://ancient-mountain-1623.herokuapp.com/
+
+Updated users, videos, and comments to have edit, show, and delete functions
