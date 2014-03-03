@@ -9,8 +9,8 @@
 <body>
 
 	<div class="nav_bar">
-		<div class="left_options">
-			<ul class="nav_buttons">
+		<div id="left_options">
+			<ul>
 				<li class="head_list"><%= link_to "Home", root_path, class: "head_link" %></li>
 				<li class="head_list"><%= link_to "All Users", users_index_path, class: "head_link" %> </li>
 				<li class="head_list"> <%= link_to "All Videos", videos_path, class: "head_link" %> </li>
@@ -18,15 +18,18 @@
 			</ul>
 		</div>
 		<div id="right_opt">
-			<p class="notice"><%= notice %> </p>
-			<p class="alert"><%= alert %> </p>
-			<p><%= link_to "Edit User", edit_user_registration_path, :class => "head_link" %></p>
-			<% if user_signed_in? %>
-			<p><%= link_to 'Logout', destroy_user_session_path, :method => :delete, :class => "head_link" %></p>
-			<% else %>
-			<p><%= link_to 'Login', new_user_session_path, :class => "head_link" %></p>
-			<% end %>
-			
+			<ul>
+				<% if user_signed_in? %>
+					<li class="head_list"><%= link_to 'Logout', destroy_user_session_path, :method => :delete, :class => "head_link" %></li>
+					<li class="head_list"><%= link_to "Edit User", edit_user_registration_path, :class => "head_link" %></li>
+				<% else %>
+					<li class="head_list"><%= link_to 'Login', new_user_session_path, :class => "head_link" %></li>
+				<% end %>
+			</ul>
+			<div id="dropdown">
+				<p class="notice"> <%= notice %></p>
+				<p class="alert"> <%= alert %></p>
+			</div>
 		</div>
 	</div>
 

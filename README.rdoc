@@ -28,3 +28,11 @@ I setup the schema and made links so you can make a user, list all users, post v
 heroku url --> http://ancient-mountain-1623.herokuapp.com/
 
 Updated users, videos, and comments to have edit, show, and delete functions
+
+
+3/3 HW 6
+heroku url --> http://ancient-mountain-1623.herokuapp.com/
+
+Updated app to use the devise gem. Now users can login/logout, videos and comments are automatically attributed to signed in user
+using hidden fields. Uses default devise functionality for password. Also made sure hackers can't manipulate html on live site.
+
