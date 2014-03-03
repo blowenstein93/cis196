@@ -1,8 +1,8 @@
 <%=form_for(@comments) do|f| %>
 	<div class="field">
-		<p>user</p>
-		<%=f.collection_select :user_id, User.all, :id, :account_name %>
+		<%= f.hidden_field :user_id, :value => current_user.id %>
 	</div>
+
 	<div class="field">
 		<p>comment</p>
 		<%=f.text_area :comment%>
@@ -12,6 +12,7 @@
 		<p>video</p>
 		<%=f.collection_select :video_id, Video.all, :id, :name %>
 	</div>
+	
 	<div class="actions">
 		<%=f.submit%>
 	</div>

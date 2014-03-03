@@ -13,7 +13,7 @@ class VideosController < ApplicationController
 
   def create
   	@video = Video.new(video_params)
-  	if @video.user != current_user.id
+  	if @video.user.id != current_user.id
         redirect_to root_path
     else 
       if @video.save

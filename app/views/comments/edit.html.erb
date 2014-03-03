@@ -1,13 +1,5 @@
 <%= form_for(@comment) do |f| %>
 	<div class="field">
-		<p>Video Name: </p>
-		<%= f.collection_select :video_id, Video.all, :id, :name %>
-	</div>
-	<div class="field">
-		<p>User Name:</p>
-		<%=f.collection_select :user_id, User.all, :id, :account_name %>
-	</div>
-	<div class="field">
 		<p>Comment: </p>
 		<%= f.text_area :comment%>
 	</div>
