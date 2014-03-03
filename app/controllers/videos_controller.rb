@@ -4,16 +4,24 @@ class VideosController < ApplicationController
   end
 
   def new
-  	@video = Video.new
+    if user_signed_in?
+  	 @video = Video.new
+    else 
+      redirect_to new_user_session_path
+    end
   end
 
   def create
   	@video = Video.new(video_params)
-  	if @video.save
-  		redirect_to videos_path
-  	else 
-  		render 'new'
-  	end
+  	if @video.user != current_user.id
+        redirect_to root_path
+    else 
+      if @video.save
+  		  redirect_to videos_path
+  	   else 
+  		   render 'new'
+  	   end
+    end
   end
 
   def show
@@ -26,10 +34,14 @@ class VideosController < ApplicationController
 
   def update
     @video = Video.find(params[:id])
-    if @video.update_attributes(video_params)
-      redirect_to video_path(@video.id)
-    else
+    if @video.user_id != current_user.id
       render 'edit'
+    else
+      if @video.update_attributes(video_params)
+        redirect_to video_path(@video.id)
+      else
+        render 'edit'
+      end
     end
   end
 

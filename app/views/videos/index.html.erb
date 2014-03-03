@@ -3,15 +3,16 @@
 		<td>file</td>
 		<td>user</td>
 		<td>name</td>
+		<td>delete</td>
+		<td>edit</td>
 	</tr>
 	<% @videos.each do |video|%>
 	<tr>
 		<td><%= link_to video.file, video_path(video.id) %></td>
-		<td><%= video.user.account_name unless video.user.nil? %></td>
+		<td><%= video.user.account_name %></td>
 		<td><%= video.name %></td>
 		<td><%= button_to "delete video", video, method: :delete %></td>
 		<td><%= link_to "edit video", edit_video_path(video.id) %></td>
-
 	</tr>
 	<% end %>
 </table>

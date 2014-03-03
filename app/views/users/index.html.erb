@@ -5,16 +5,18 @@
 		<td>password</td>
 		<td>location</td>
 		<td>age</td>
+		<td>delete</td>
+		<td>edit</td>
 	</tr>
-	<% @users.each do |user|%>
+	<% @users.each do |user| %>
 	<tr>
-		<td><%= link_to user.account_name, user_path(user.id) %></td>
+		<td><%= link_to user.account_name, users_show_path(user.id) %></td>
 		<td><%= user.email %></td>
 		<td><%= user.password %></td>
 		<td><%= user.location %></td>
 		<td><%= user.age %></td>
-		<td><%= button_to "delete user", user, method: :delete %></td>
-		<td><%= link_to "edit user", edit_user_path(user.id) %></td>
+		<td><%= button_to "delete user", user_registration_path, :method => :delete %></td>
+		<td><%= link_to "edit user", edit_user_registration_path %></td>
 	</tr>
 	<% end %>
 </table>

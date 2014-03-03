@@ -22,6 +22,10 @@
 	float:left;
 }
 
+.right_options {
+	float:right;
+}
+
 .head_list {
 	display: inline;
 	padding-right:5px;
@@ -32,3 +36,19 @@
 	color: #0d2b26;
 	text-decoration: none;
 }
+
+.nav_buttons {
+	padding-right:10px;
+}
+
+#right_opt{
+	float:right;
+	height:60px;
+	padding-right:5px;
+	padding-left:5px;
+	line-height:10px;
+	background-color: #F79F81;
+	vertical-align: middle;
+}
+
+

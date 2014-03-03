@@ -3,14 +3,14 @@
 		<p>file</p>
 		<%= f.text_field :file %>
 	</div>
+	
 	<div class="field">
-		<p>user</p>
-		<%=f.collection_select :user_id, User.all, :id, :account_name %>
+		<%= f.hidden_field :user_id, :value => current_user.id %>
 	</div>
 	
 	<div class="field">
-		<p>name</p>
-		<%=f.text_field :name%>
+		<p>Video Title</p>
+		<%=f.text_field :name %>
 	</div>
 
 	<div class="actions">
