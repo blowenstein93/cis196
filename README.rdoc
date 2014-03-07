@@ -37,3 +37,15 @@ Updated app to use the devise gem. Now users can login/logout, videos and commen
 using hidden fields. Uses default devise functionality for password. Also made sure hackers can't manipulate html on live site.
 I ran into a few errors with accepting additional fields to the defaults for devise. Also, I had some trouble installing the 
 devise migration properly.
+
+
+3/7 HW 7
+heroku url --> http://ancient-mountain-1623.herokuapp.com/
+
+Updated app to have validations: comments are between 50 and 500 characters, video names are unique, ages must be between 18 and 100.
+This wasn't too bad. I had to lookup how to validate a value between a range and how to make the error message. I had some trouble
+with having the error message show up. For some reason it wouldn't work with :validates, so I had to do :validates_inclusion_of 
+and this worked.
+
+
+
