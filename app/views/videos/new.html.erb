@@ -11,18 +11,20 @@
       	<% end %>
   	</div>
 
-	<div class="field">
-		<p>file</p>
-		<%= f.text_field :file %>
-	</div>
-	
+	<div>
+        <%= label_tag :file %>
+        <%= file_field_tag :file %>
+        <%= submit_tag "Upload video" %>
+    </div>
+
+
 	<div class="field">
 		<%= f.hidden_field :user_id, :value => current_user.id %>
 	</div>
 	
 	<div class="field">
 		<p>Video Name</p>
-		<%=f.text_field :name %>
+		<%= f.text_field :name %>
 	</div>
 
 	<div class="actions">
