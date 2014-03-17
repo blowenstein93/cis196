@@ -47,4 +47,3 @@ This wasn't too bad. I had to lookup how to validate a value between a range and
 with having the error message show up. For some reason it wouldn't work with :validates, so I had to do :validates_inclusion_of 
 and this worked.
 
-
