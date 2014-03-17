@@ -8,9 +8,14 @@
 		<li> <%= link_to "Make a new user", new_user_registration_path, class:"body_link" %> </li>
 		<li> <%= link_to "List all users", users_index_path, class:"body_link" %> </li>
 
+		<% if user_signed_in? %>
 		<li> <%= link_to "Post a new video", new_video_path, class:"body_link" %> </li>
+		<% end %>
 		<li> <%= link_to "List all videos", videos_path, class:"body_link" %> </li>
 
-		<li> <%= link_to "Post a new comment", new_comment_path, class:"body_link" %> </li>
+		
+		<% if user_signed_in? %>
+			<li> <%= link_to "Post a new comment", new_comment_path, class:"body_link" %> </li>
+		<% end %>
 		<li> <%= link_to "List all comments", comments_path, class:"body_link" %> </li>
 </div>
