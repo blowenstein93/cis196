@@ -1,6 +1,6 @@
 App::Application.routes.draw do
   devise_for :users
-#  resources :users, only: [:index]
+  resources :users, only: [:show]
   resources :videos
   resources :comments
   get '/users/show/:id', to: 'users#show', as: 'users_show'

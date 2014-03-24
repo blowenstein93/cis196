@@ -4,12 +4,13 @@ class CommentsController < ApplicationController
   end
 
   def new
-    @comments = Comment.new
+    @comment = Comment.new
   end
 
   def create
   	@comment = Comment.new(comment_params)
   	if @comment.save
+      Notifications.new_comment(@comment).deliver
   		redirect_to comments_path
   	else
   		render 'new'

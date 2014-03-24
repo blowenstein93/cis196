@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/ryanb/letter_opener.git
+  revision: 6c6e0c4f3f9edbb2113a294d820f2e31739dc478
+  specs:
+    letter_opener (1.2.0)
+      launchy (~> 2.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -63,6 +70,8 @@ GEM
     json (1.8.1)
     jwt (0.1.11)
       multi_json (>= 1.5)
+    launchy (2.4.2)
+      addressable (~> 2.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -159,6 +168,7 @@ DEPENDENCIES
   filepicker
   jbuilder (~> 1.2)
   jquery-rails
+  letter_opener!
   pg
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
