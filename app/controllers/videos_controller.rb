@@ -26,6 +26,8 @@ class VideosController < ApplicationController
 
   def show
     @video = Video.find(params[:id])
+    @comment = Comment.new
+    @comments = Comment.order(created_at: :desc).where(video_id: params[:id]).limit(4)
   end
 
   def edit

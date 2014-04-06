@@ -56,5 +56,10 @@ and this worked.
 3/24 HW 8
 heroku url --> http://ancient-mountain-1623.herokuapp.com/
 
-Included email as a heroku addon -- used the sendgrid addon. Starting to play around with different addons that support videos (youtube_it and filepicker). Ran into trouble with maintaining consistency of comment vs comments, ommitted a route in config/routes, and a difficult to trace type in 'productios'
+Included email as a heroku addon -- used the sendgrid addon. Sends user an email if their video was commented on. Starting to play around with different addons that support videos (youtube_it and filepicker). Ran into trouble with maintaining consistency of comment vs comments, ommitted a route in config/routes, and a difficult to trace type in 'productios'
 I initially tried to use filepicker and youtube_it but had too much trouble to fully implement it. Will try to implement with next chance.
+
+4/6 HW 9
+Added queries:
+Videos controller - added where, limit, and order to change show method. 
+Video page shows up to 4 comments for that video sorted in reverse cronological order.

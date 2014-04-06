@@ -3,3 +3,29 @@
 	<p>Video Name: <%= @video.name %></p>
 	<p>User Name: <%= @video.user.account_name %></p>
 </div>
+
+<% @comments.each do |f|%>
+	<div class="vid_comment">
+		<h5>Posted by: <%= f.user.account_name %></h5>
+		<p><%=f.comment%></p>
+	</div>
+<% end %>
+
+<%= form_for(@comment) do |f| %>
+	<div class="field">
+		<%= f.hidden_field :user_id, :value => current_user.id %>
+	</div>
+
+	<div class="field">
+		<p>comment</p>
+		<%=f.text_area :comment %>
+	</div>
+	
+	<div class="field">
+		<%=f.hidden_field :video_id, :value => @video.id %>
+	</div>
+	
+	<div class="actions">
+		<%=f.submit%>
+	</div>
+<%end%>
