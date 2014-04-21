@@ -1,10 +1,10 @@
 $(function() {
 	$("#toggle_comments").click( function() {
-		if( $(".comments").hasClass("hide")) {
-			$(".comments").removeClass("hide");
+		if( $(".vid_comment").hasClass("hide")) {
+			$(".vid_comment").removeClass("hide");
 			$("#toggle_comments").html("Hide Comments");
 		} else {
-			$(".comments").addClass("hide");
+			$(".vid_comment").addClass("hide");
 			$("#toggle_comments").text("Show Comments")
 		}
 	});
