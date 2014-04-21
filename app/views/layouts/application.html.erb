@@ -11,10 +11,10 @@
 	<div class="nav_bar">
 		<div id="left_options">
 			<ul>
-				<li class="head_list"><%= link_to "Home", root_path, class: "head_link" %></li>
-				<li class="head_list"><%= link_to "All Users", users_index_path, class: "head_link" %> </li>
-				<li class="head_list"> <%= link_to "All Videos", videos_path, class: "head_link" %> </li>
-				<li class="head_list"> <%= link_to "All Comments", comments_path, class: "head_link" %> </li>				
+				<li class="head_list"><%= link_to "Home", root_path, class: "head_link", id: "home" %></li>
+				<li class="head_list"><%= link_to "All Users", users_index_path, class: "head_link", id: "users" %> </li>
+				<li class="head_list"> <%= link_to "All Videos", videos_path, class: "head_link", id:"videos" %> </li>
+				<li class="head_list"> <%= link_to "All Comments", comments_path, class: "head_link", id:"comments" %> </li>				
 			</ul>
 		</div>
 		<div id="right_opt">

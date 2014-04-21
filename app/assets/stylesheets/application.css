@@ -39,9 +39,17 @@
 	padding-left:5px;
 	padding-right:5px;
 	border:2px solid;
+
+}
+.active{
+	background-color: #F79F81;
 }
 
 .notice .alert {
 	padding-left:5px;
+}
+
+.hide{
+	display: none;
 }
 

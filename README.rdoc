@@ -60,3 +60,10 @@ I initially tried to use filepicker and youtube_it but had too much trouble to f
 Added queries:
 Videos controller - added where, limit, and order to change show method. 
 Video page shows up to 4 comments for that video sorted in reverse cronological order.
+
+
+4/21 HW10
+Added javascript
+Able to toggle hide/show comments on any video page
+Used script on html of every page to highlight the appropriate nav-bar button
+Had a lot of trouble highlighting the appropriate nav-bar button, but used this workaround to solve it. It's not the most elegant solution, but we couldn't find anything to better implementent the desired behavior.
