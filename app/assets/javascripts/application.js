@@ -43,7 +43,7 @@ $(function() {
 	});
 });
 
-/*
+
 
 $(function() {
 	$(function() {
@@ -70,5 +70,6 @@ $(function() {
 //		});
 	});
 });
+*/
 
 
