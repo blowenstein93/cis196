@@ -18,8 +18,6 @@ end
 
 gem 'devise', '3.0'
 
-gem 'youtube_it'
-
 gem 'filepicker'
 
 # Use SCSS for stylesheets

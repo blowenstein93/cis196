@@ -1,5 +1,9 @@
 class AddFilepickerUrlToVideos < ActiveRecord::Migration
-  def change
-    add_column :videos, :filepicker_url, :string
+  def up
+    add_column :user, :filepicker_url, :string
+  end
+
+  def down
+    remove_column :user, :filepicker_url
   end
 end
