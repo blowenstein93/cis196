@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140309043244) do
+ActiveRecord::Schema.define(version: 20140303165047) do
 
   create_table "comments", force: true do |t|
     t.integer  "user_id"
@@ -52,15 +52,8 @@ ActiveRecord::Schema.define(version: 20140309043244) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "filepicker_url"
   end
 
   add_index "videos", ["user_id"], name: "index_videos_on_user_id"
-
-  create_table "youtube_its", force: true do |t|
-    t.string   "video"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
 end
