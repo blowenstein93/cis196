@@ -1,7 +1,7 @@
-<div>
-	<p>Filename: <%= video_tag @video.file, :controls => true %> </p>
+<div id="video_box">
 	<p>Video Name: <%= @video.name %></p>
 	<p>User Name: <%= @video.user.account_name %></p>
+	<p>Filename: <%= video_tag @video.file, :controls => true %> </p>
 </div>
 
 <button id="toggle_comments">Hide Comments</button>
@@ -22,7 +22,7 @@
 		</div>
 
 		<div class="field">
-			<p>comment</p>
+			<p>Post a new comment!</p>
 			<%=f.text_area :comment %>
 		</div>
 		
