@@ -18,9 +18,8 @@ end
 
 gem 'devise', '3.0'
 
-gem 'filepicker'
+gem 'uploadcare-rails', "~> 1.0"
 
-gem 'youtube_it'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

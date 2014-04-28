@@ -1,9 +1,8 @@
 <div>
-	<p>Filename: <%= @video.file %> </p>
+	<p>Filename: <%= video_tag @video.file, :controls => true %> </p>
 	<p>Video Name: <%= @video.name %></p>
 	<p>User Name: <%= @video.user.account_name %></p>
 </div>
-
 
 <button id="toggle_comments">Hide Comments</button>
 

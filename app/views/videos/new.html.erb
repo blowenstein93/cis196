@@ -1,6 +1,5 @@
 <%=form_for @video do|f| %>
 
-
   	<div > 
     	<% if @video.errors.any? %>
       		<ul>
@@ -11,10 +10,10 @@
       	<% end %>
   	</div>
 
-	<div class="field">
-        <p> File </p>
-        <%= file_field_tag :filepicker_url , dragdrop: true%>
-  </div>
+  	<div class="field">
+  		<p>Upload Your Video</p>
+  			<%= f.uploadcare_field :file %>
+	</div>
 
 	<div class="field">
 		<%= f.hidden_field :user_id, :value => current_user.id %>
