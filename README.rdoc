@@ -67,3 +67,10 @@ Added javascript
 Able to toggle hide/show comments on any video page
 Used script on html of every page to highlight the appropriate nav-bar button
 Had a lot of trouble highlighting the appropriate nav-bar button, but used this workaround to solve it. It's not the most elegant solution, but we couldn't find anything to better implementent the desired behavior.
+
+
+
+4/28
+Added upload care to handle videos. Cloned my repo so that I could get a clean slate because I had an issue with devise. Turned out to be an issue with a chrome add-on I had. 
+New heroku --> http://whispering-stream-5429.herokuapp.com/
+
