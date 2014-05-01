@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
   	@comment = Comment.new(comment_params)
   	if @comment.save
       Notifications.new_comment(@comment).deliver
-  		redirect_to comments_path
+  		redirect_to videos_path
   	else
   		render 'new'
   	end

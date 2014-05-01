@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 td {
-	border: 1px solid;
 	padding-right: 25px;
 	padding-left: 10px;
 }
@@ -11,8 +10,18 @@ table {
 	left:3px;
 }
 
+tr{
+	line-height: 25px;
+}
+
 
 .users_videos{
 	border: 2px solid;
 	background-color: #F2F2F2;
+	width:50%;
+	text-align: center;
+}
+
+.user_vid{
+	text-align: center;
 }

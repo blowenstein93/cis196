@@ -1,16 +1,20 @@
+<h2>User Page</h2>
+
 <div>
 	<p>Username: <%= @user.account_name %></p>
 	<p>Email: <%= @user.email %></p>
 	<p>Age: <%= @user.age %> </p>
 	<p>Location: <%= @user.location %> </p>
 
-	<p><%= link_to "edit user", edit_user_registration_path %> </p>
+	<% if @user == current_user %>
+		<p><%= link_to "edit user", edit_user_registration_path %> </p>
+	<% end %>
 
 	<h2>Videos:</h2>
 	<% @videos.each do |video| %>
 		<div class="users_videos">
-			<h3><%= link_to video.name, video_path(video.id) %></h3>
-			<%= video_tag video.file, height, :controls => true %>
+			<h3 class="user_vid"><%= link_to video.name, video_path(video.id) %></h3>
+			<%= video_tag video.file, :controls => true , class: "user_vid"%>
 		</div>
 	<% end %>
 </div>

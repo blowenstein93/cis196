@@ -19,7 +19,6 @@
 				<li class="head_list"><%= link_to "Home", root_path, class: "head_link", id: "home" %></li>
 				<li class="head_list"><%= link_to "All Users", users_index_path, class: "head_link", id: "users" %> </li>
 				<li class="head_list"> <%= link_to "All Videos", videos_path, class: "head_link", id:"videos" %> </li>
-				<li class="head_list"> <%= link_to "All Comments", comments_path, class: "head_link", id:"comments" %> </li>				
 			</ul>
 		</div>
 		<div id="right_opt">
@@ -40,6 +39,11 @@
 
 
 <%= yield %>
+
+
+	<div class="footer">
+		<p class="contact">Contact me at blowenstein93@gmail.com for more information about this app</p>
+	</div>
 
 </body>
 </html>
