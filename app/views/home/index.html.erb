@@ -13,9 +13,8 @@
 		<% end %>
 		<li> <%= link_to "List all videos", videos_path, class:"body_link" %> </li>
 </div>
-
+<div class="videos_home">
 <h2>Videos:</h2>
-
 <table>
 	<% @videos.each do |video| %>
 	<tr>
@@ -29,3 +28,4 @@
 	</tr>
 	<% end %>
 </table>
+</div>
