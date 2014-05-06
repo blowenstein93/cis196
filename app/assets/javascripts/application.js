@@ -51,10 +51,10 @@ $(document).on("page:load", function(){
 	$(function() {
 //		$("#left_options").click(function() {
 		var current_uri = window.location.pathname;
-		//var current_uri = request.env["PATH_INFO"];
-		//var current_uri = request.url;
-		//alert("-"+current_uri+"-");
 			switch (current_uri) {
+			case "/":
+			  $("#home").addClass("active");
+			  break;
 			case "/users/index":
 			  $("#users").addClass("active");
 			  break;
@@ -63,9 +63,6 @@ $(document).on("page:load", function(){
 			  break;
 			case "/comments":
 			  $("#comments").addClass("active");
-			  break;
-			case "/":
-			  $("#home").addClass("active");
 			  break;
 			};
 		//alert("Done Switch");
