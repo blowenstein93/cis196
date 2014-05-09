@@ -1,8 +1,12 @@
 <div id="video_content">
-	<h2>Video: <%= @video.name %></h2>
-	<h3>User: <%= link_to @video.user.account_name, users_show_path(@video.user.id), class: "video_link" %></h3>
+	<h2>Video: "<%= @video.name %>"</h2>
 	<p><%= video_tag @video.file, :controls => true, class: "video_box" %> </p>
+	<p>Posted by <%= link_to @video.user.account_name, users_show_path(@video.user.id), class: "video_link" %></p>
+
 </div>
+
+
+
 
 <button id="toggle_comments">Hide Comments</button>
 

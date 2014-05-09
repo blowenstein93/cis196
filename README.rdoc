@@ -74,3 +74,26 @@ Had a lot of trouble highlighting the appropriate nav-bar button, but used this 
 Added upload care to handle videos. Cloned my repo so that I could get a clean slate because I had an issue with devise. Turned out to be an issue with a chrome add-on I had. 
 New heroku --> http://whispering-stream-5429.herokuapp.com/
 
+
+
+
+5/9/14
+heroku url --> http://whispering-stream-5429.herokuapp.com/
+
+Final CIS196 Submission-
+The app is similar to youtube in functionality. It is meant to be a video sharing site. You can share your own videos or watch and comment on other people's videos. 
+Ruby gems- 
+devise (user account registration and session creation, sign in, sign up, edit)
+https://github.com/plataformatec/devise
+
+heroku addons- 
+sendgrid (emails, sends a user an email if someone comments on their video)
+https://sendgrid.com/
+uploadcare (upload, storage, and playback for videos)
+https://uploadcare.com/
+
+Javascript is used to show/hide comments under a video and highlight nav-bar buttons after clicking
+
+Ran into many problems with javascript. Very difficult to get nav-bar to highlight the appropriate button. Also had a hard time finding a good fit for a video addon. Some of the first ones I used were either paid or only handled one of upload, storage, editing, playback. 
+Still run into errors sometimes with writing path names, variable names etc. although these errors are becoming drastically less frequent and easier solved on my own
+Looking back now it's difficult to remember the biggest roadblocks I had. Although I know had many and frequent issues that I often couldn't solve after playing around with them for even an hour. 
